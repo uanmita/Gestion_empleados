@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Gestión de Empleados{% endblock %}</title>
+</head>
+<body>
+<nav>
+    <a href="{% url 'index' %}">Inicio</a>
+    <a href="{% url 'empleados' %}">Empleados</a>
+</nav>
+<hr>
+<main>
+    {% block content %}{% endblock %}
+</main>
+</body>
+</html>
