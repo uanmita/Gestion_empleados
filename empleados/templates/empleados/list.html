@@ -1,0 +1,10 @@
+{% extends 'empleados/base.html' %}
+{% block title %}Lista de empleados{% endblock %}
+{% block content %}
+    <h2>Empleados registrados</h2>
+    <ul>
+        {% for emp in empleados %}
+            <li>{{ emp.nombre }} - {{ emp.departamento.nombre }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

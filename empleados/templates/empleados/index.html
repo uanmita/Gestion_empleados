@@ -1,10 +1,6 @@
 {% extends 'empleados/base.html' %}
-{% block title %}Lista de empleados{% endblock %}
+{% block title %}Gestion de empleados{% endblock %}
 {% block content %}
-    <h2>Empleados registrados</h2>
-    <ul>
-        {% for emp in empleados %}
-            <li>{{ emp.nombre }} - {{ emp.departamento.nombre }}</li>
-        {% endfor %}
-    </ul>
-{% endblock %}
+    <h2>Aplicacion de Gestion de Empleados</h2>
+    <p>Aplicacion diseñada para la gestion de empleados</p>
+ {% endblock %}
