@@ -3,4 +3,10 @@
 {% block content %}
     <h1>Listado de proyectos de empleados.</h1>
     <p>Ultimos proyectos desarrollados por empleados</p>
+    <ul>
+        {% for pro in proyectos %}
+            <li>{{ pro.nombre }} - {{ pro.detalle }}</li>
+        {% endfor %}
+    </ul>
+
  {% endblock %}

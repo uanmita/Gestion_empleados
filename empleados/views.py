@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import Empleado
+from .models import Empleado, GestionPortfolios
+
 
 def index(request):
     return render(request, 'empleados/index.html')
@@ -12,4 +13,5 @@ def empleados_create(request):
    return render(request, 'empleados/new.html')
 
 def portfolio_list(request):
-    return render(request, 'empleados/portfolio.html')
+    proyectos = GestionPortfolios.objects.all()
+    return render(request, 'empleados/portfolio.html', {'proyectos': proyectos})
